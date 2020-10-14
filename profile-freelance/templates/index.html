@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set presentation = get_page(path="presentation.md") %} 
+{% set travaux = get_section(path="travaux/_index.md") %}
+
+<section class="hero is-medium">
+  <div class="hero-body">
+  <div class="container is-max-desktop">
+    <div class="columns is-vcentered">
+      <div class="column has-text-centered">
+
+        <h1 class="title ">Cosimus</h1>
+
+        <h2 class="subtitle">Modélisation et Simulation de Systèmes Complexes</h2>
+
+        <div class="columns is-centered is-vcentered is-mobile">
+          <div class="column is-narrow">
+            <a href="mailto:contact@email.com" class="has-text-dark">
+              <span class="icon">
+                <i class="mu mu-mail is-size-3"></i>
+              </span>
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://www.malt.fr/profile/guillaumecherel">
+              <img width="22" height="22" src="logos/Malt-Mark.svg">
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://www.linkedin.com/in/guillaumecherel/">
+              <img width="28" height="28" src="logos/LinkedIn-Mark.svg">
+            </a>
+          </div>
+          <div class="column is-narrow">
+            <a href="https://github.com/guillaumecherel">
+              <img width="24" height="24" src="logos/GitHub-Mark.svg">
+            </a>
+          </div>
+        </div>
+
+        <div class="block has-text-centered is-hidden-tablet">
+          <span class="icon">
+            <i class="mu mu-opts-h is-size-4"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content has-text-justified">
+          {{ presentation.content | safe }} 
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="hero">
+  <div class="hero-body has-background-grey-dark has-text-grey-lighter ">
+    <div class="columns is-centered is-vcentered is-mobile">
+      <div class="column has-text-right is-narrow">
+        <span class="icon">
+          <i class="mu mu-down is-size-4 is-size-4-mobile"></i>
+        </span>
+      </div>
+
+      <div class="column has-text-centered is-narrow">
+        <h2 class="title has-text-grey-lighter is-size-4-mobile">Quelques travaux …</h2>
+      </div>
+
+      <div class="column has-text-left is-narrow">
+      <span class="icon">
+        <i class="mu mu-down is-size-4 is-size-4-mobile"></i>
+      </span>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+      <div class="content has-text-left has-text-link-light">
+        <ul>
+        {% for page in travaux.pages %}
+        <li><a href="#{{page.title | slugify}}" class="has-text-grey-lighter">{{page.title}}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% for page in travaux.pages %}
+{% if loop.index % 2 == 0 %}
+{% set bgColor = "lighter" %}
+{% else %}
+{% set bgColor = "light" %}
+{% endif %}
+<section class="hero is-{{bgColor}}">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <h2 class="title">
+          <span class="icon">
+            <i class="mu mu-i-right"></i>
+          </span>
+          <a id="{{page.title | slugify}}"></a>
+          {{ page.title | safe }}
+        </h2>
+
+        <div class="columns">
+          <div class="column">
+            {{ page.content | safe }}
+          </div>
+
+          <div class="column">
+            <div class="box">
+            <img src="{{ page.permalink | safe }}figure.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<footer class="footer">
+  <div class="columns is-centered">
+  <div class="column is-narrow">
+    <strong>Cosimus</strong> par Guillaume Chérel. 
+    <p>Forme juridique. </p>
+    <p>Capital social. </p>
+    <p>Adresse du siège social. </p>
+    <p>contact@email.com </p>
+    <p>06 01 02 03 04 </p>
+  </div>
+  <div class="column is-narrow">
+      <a href="https://www.s-ings.com/projects/microns-icon-font/">Microns</a> icon set by Stephen Hutchings  is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>
+  </div>
+  </div>
+</footer>
+{% endblock content %} 

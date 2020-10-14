@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Now-Regular';
+  src: url('Now-Regular.eot');
+  src: url('Now-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Now-Regular.svg#Now-Regular') format('svg'),
+       url('Now-Regular.ttf') format('truetype'),
+       url('Now-Regular.woff') format('woff'),
+       url('Now-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

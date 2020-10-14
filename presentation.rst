@@ -1,3 +1,4 @@
+
 Présentation
 ============
 
@@ -41,7 +42,7 @@ algorithme avec un paramètrage fixé. Les paramètres sont échantillonnés
 uniformément pour tester les deux algorithmes dans un large éventail de
 conditions.
 
-.. image:: img/monapmc.png
+.. image:: ../img/monapmc.png
 
 
 Estimation de la pollution sonore
@@ -61,7 +62,7 @@ expositions moyennes de deux populations. Sans surprise, Paris est plus
 bruyante que le reste de la France.
 
 .. [#] https://www.euro.who.int/en/health-topics/environment-and-health/noise/data-and-statistics
-.. image:: img/level_calib_vs_time_of_day.png
+.. image:: ../img/level_calib_vs_time_of_day.png
 
 
 Exploration des sorties d'un modèle de simulation
@@ -83,7 +84,7 @@ grande et celle des autres) et la croissance de la population dépassent
 largement les valeurs plausibles pour un géographe (zones grises).
 
 .. [#] https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0138212
-.. image:: img/mariusbsethresholdandintervals.png
+.. image:: ../img/mariusbsethresholdandintervals.png
 
 
 Un modèle spatial de la dynamique de population d'arbres en savanne
@@ -106,6 +107,6 @@ cas spatial, et de la densité d'arbres globale dans le cas non spatial. Lorsque
 l'espace n'est pas pris en compte, la population d'arbres atteint un niveau
 plus élevé que lorsqu'il l'est.
 
-.. image:: img/bosquet.png
+.. image:: ../img/bosquet.png
 
 
