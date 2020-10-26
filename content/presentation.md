@@ -1,7 +1,7 @@
 +++
 +++
 
-Docteur en modélisation de systèmes complexes, avec mon expérience depuis 2010
+Docteur en modélisation de systèmes complexes depuis 2013, avec mon expérience
 au CNRS, à l'Inria et à l'Université Paris 6, je vous aide à :
 
 - développer des **modèles** informatiques de systèmes complexes,
@@ -19,4 +19,6 @@ J'ai travaillé avec **Python**, **R**, **SQL** pour analyser des données,
 l'automatisation de tâches sous Unix, et plus récemment **Rust**, pour la
 découverte. 
 
-
+Développons ensemble vos projets de data science, modélisation et IA!
+Contactez-moi par [mail](mailto:guillaume.cherel@cosimus.com) ou via mes profils
+[Malt](https://www.malt.fr/profile/guillaumecherel), [LinkedIn](https://www.linkedin.com/in/guillaumecherel/) ou [GitHub](https://github.com/guillaumecherel).
