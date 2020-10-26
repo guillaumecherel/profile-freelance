@@ -5,7 +5,7 @@ title = "Estimation de la pollution sonore"
 *2016-2017, Inria, équipe Clime.*
 
 Le bruit a des [conséquences problématiques sur le sommeil, le cœur, les
-performances scholaires][who-noise]… Les smart-phones sont équipés de microphones qui
+performances scolaires][who-noise]… Les smart-phones sont équipés de microphones qui
 permettent de mesurer le niveau de bruit dans l'environnement de leurs
 utilisateurs. La figure ci-contre montre l'évolution des niveaux de bruits
 relevés par des téléphones mobiles.

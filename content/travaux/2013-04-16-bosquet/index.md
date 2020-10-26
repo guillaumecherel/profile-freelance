@@ -1,15 +1,15 @@
 +++
-title = "Un modèle spatial de la dynamique de population d'arbres en savanne"
+title = "Un modèle spatial de la dynamique de population d'arbres en savane"
 +++
 
 *2010-2013, Université Paris 6, Laboratoire Bioemco.*
 
 En savane, les bosquets réduisent localement l'intensité du feu en projetant de
 l'ombre au sol qui diminue le combustible — l'herbe — qui pousse. Ces
-regroupement d'arbres pourraient jouer un rôle sur la population globale en
+regroupements d'arbres pourraient jouer un rôle sur la population globale en
 protégeant les jeunes pousses du feu. Ce modèle confirme que l'organisation
 spatiale joue un rôle sur la dynamique de population globale, mais dans l'autre
-sens : la population d'arbres est moindre comparée à un modèle qui non spatial.
+sens : la population d'arbres est moindre comparée à un modèle non spatial.
 
 Cette figure représente le modèle et des résultats de simulation. Le modèle de
 type automate cellulaire fait évoluer la présence d'arbres (cases noires) en
