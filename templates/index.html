@@ -5,24 +5,18 @@
 {% set presentation = get_page(path="presentation.md") %} 
 {% set travaux = get_section(path="travaux/_index.md") %}
 
-<section class="hero is-medium">
+<section class="hero is-fullheight">
+  <div class="hero-head">
+  </div>
+
   <div class="hero-body">
   <div class="container is-max-desktop">
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered mb-6">
       <div class="column has-text-centered">
 
         <h1 class="title">Cosimus</h1>
 
-        <h2 class="subtitle">Modélisation et Simulation de Systèmes Complexes</h2>
-
-        <div class="block">
-          par
-          <!--
-          <span class="icon">
-            <i class="mu mu-opts-h is-size-4"></i>
-          </span>
-          -->
-        </div>
+        <h2 class="subtitle">Data science, Machine learning, Modélisation & Simulation</h2>
 
         <div class="block is-size-4 has-text-weight-medium">
           Guillaume Chérel
@@ -31,8 +25,8 @@
         <div class="columns is-centered is-vcentered is-mobile">
           <div class="column is-narrow ">
             <a href="mailto:guillaume.cherel@cosimus.com" class="has-text-dark">
-              <span class="icon" >
-                <i class="mu mu-mail is-size-3"></i>
+              <span class="icon my-0 py-0" >
+                <i class="mu mu-mail is-size-3 my-0 py-0"></i>
               </span>
             </a>
           </div>
@@ -53,7 +47,7 @@
           </div>
         </div>
 
-        <div class="columns is-centered is-vcentered is-mobile">
+        <div class="columns is-centered is-vcentered is-mobile is-size-5">
           <div class="column is-narrow ">
             <a href="2020-09-10_ingenieur_modelisation_indep_fr_web.pdf" class="has-text-black">CV</a>
           </div>
@@ -75,12 +69,71 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
-</section>
 
-<section class="hero">
-  <div class="hero-body has-background-grey-dark has-text-grey-lighter ">
+    <div class="tile is-ancestor" >
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <h3 class="subtitle has-text-centered">Data science</h3>
+          <div class="content">
+            <ul>
+              <li>
+                <strong>Structurer</strong> vos données pour les rendre utilisables,
+              </li>
+              <li>
+                En tirer des connaissances pour la <strong>prédiction</strong> et l'aide à la <strong>décision</strong>,
+              </li>
+              <li>
+                Créer des <strong>visualisations</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <h3 class="subtitle has-text-centered">Machine learning</h3>
+          <div class="content">
+            <ul>
+              <li>
+                Exploiter de <strong>grands volumes</strong> de données,
+              </li>
+              <li>
+                <strong>Automatiser</strong> des tâches complexes,
+              </li>
+              <li>
+                Concevoir des <strong>algorithmes originaux</strong> répondant à vos besoins spécifiques.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <div class="tile is-child box">
+          <h3 class="subtitle has-text-centered">Modélisation & Simulation</h3>
+          <div class="content">
+          <ul>
+            <li>
+              Développer des <strong>modèles</strong> informatiques de systèmes complexes,
+            </li>
+            <li>
+              Réaliser des études en <strong>simulation</strong>,
+            </li>
+            <li>
+              Concevoir des algorithmes pour la simulation, la
+              <strong>calibration</strong> de modèles,
+              l'<strong>estimation</strong> d'informations incomplètes, la
+              <strong>prédiction</strong>.
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="hero-foot has-background-grey-dark has-text-grey-lighter py-3">
     <div class="columns is-centered is-vcentered is-mobile">
       <div class="column has-text-right is-narrow">
         <span class="icon">
@@ -97,8 +150,12 @@
         <i class="mu mu-down is-size-4 is-size-4-mobile"></i>
       </span>
       </div>
-    </div>
+  </div>
 
+</section>
+
+<section class="hero">
+  <div class="hero-body pt-0 has-background-grey-dark has-text-grey-lighter ">
     <div class="columns">
       <div class="column is-half is-offset-one-quarter">
       <div class="content has-text-left has-text-link-light">
