@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero is-fullheight">
+  <div class="hero-head">
+  </div>
+
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-vcentered mb-6">
+        <div class="column has-text-centered">
+
+          <h1 class="title">Cosimus</h1>
+
+          <h2 class="subtitle">Créer les logiciels dont vous avez besoin</h2>
+
+          <div class="block is-size-4 has-text-weight-medium">
+            Guillaume Chérel
+          </div>
+
+          <div class="columns is-centered is-vcentered is-mobile">
+            <div class="column is-narrow ">
+              <a href="mailto:guillaume.cherel@cosimus.com" class="has-text-dark">
+                <span class="icon my-0 py-0" >
+                  <i class="mu mu-mail is-size-3 my-0 py-0"></i>
+                </span>
+              </a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://www.malt.fr/profile/guillaumecherel">
+                <img width="22" height="22" src="logos/Malt-Mark.svg">
+              </a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://www.linkedin.com/in/guillaumecherel/">
+                <img width="28" height="28" src="logos/LinkedIn-Mark.svg">
+              </a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://github.com/guillaumecherel">
+                <img width="24" height="24" src="logos/GitHub-Mark.svg">
+              </a>
+            </div>
+          </div>
+
+          <div class="columns is-centered is-vcentered is-mobile is-size-5">
+            <div class="column is-narrow ">
+              <a href="2020-09-10_ingenieur_modelisation_indep_fr_web.pdf" class="has-text-black">CV</a>
+            </div>
+            <div class="column is-narrow ">
+              <a href="publications.pdf" class="has-text-black">publications</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="column">
+          <div class="block has-text-centered is-hidden-tablet">
+            <span class="icon">
+              <i class="mu mu-opts-h is-size-4"></i>
+            </span>
+          </div>
+          <div class="content has-text-justified">
+            {{ section.content | safe }} 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="columns is-centered is-vcentered is-mobile pb-6">
+      <div class="column has-text-centered">
+        <span class="icon">
+          <i class="mu mu-down is-size-2 is-size-4-mobile"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% include "trousse_a_outils.html" %}
+{% include "missions.html" %}
+
+{% endblock content %} 

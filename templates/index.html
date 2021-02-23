@@ -2,27 +2,24 @@
 
 {% block content %}
 
-{% set presentation = get_page(path="presentation.md") %} 
-{% set travaux = get_section(path="travaux/_index.md") %}
-
-<section class="hero is-fullheight">
-  <div class="hero-head">
-  </div>
-
-  <div class="hero-body">
+<section class="section py-6 mb-6">
   <div class="container is-max-desktop">
-    <div class="columns is-vcentered mb-6">
-      <div class="column has-text-centered">
-
+    <div class="columns is-centered">
+      <div class="column has-text-centered is-narrow">
         <h1 class="title">Cosimus</h1>
 
-        <h2 class="subtitle">Data science, Machine learning, Modélisation & Simulation</h2>
+        <h2 class="subtitle">Créer les logiciels dont vous avez besoin</h2>
 
-        <div class="block is-size-4 has-text-weight-medium">
-          Guillaume Chérel
+        <div class="block is-size-5">
+        <p>Développement logiciel: Scala, Haskell, Python, Rust</p>
+        <p>Automatisation et traitement de données</p>
         </div>
 
-        <div class="columns is-centered is-vcentered is-mobile">
+        <div class="block is-size-4 mb-1">
+          <p>Guillaume Chérel</p>
+        </div>
+
+        <div class="columns is-centered is-vcentered is-mobile mb-0">
           <div class="column is-narrow ">
             <a href="mailto:guillaume.cherel@cosimus.com" class="has-text-dark">
               <span class="icon my-0 py-0" >
@@ -47,175 +44,124 @@
           </div>
         </div>
 
-        <div class="columns is-centered is-vcentered is-mobile is-size-5">
-          <div class="column is-narrow ">
+        <div class="columns is-centered is-vcentered is-mobile is-size-5 pt-0">
+          <div class="column is-narrow  pt-0">
             <a href="2020-09-10_ingenieur_modelisation_indep_fr_web.pdf" class="has-text-black">CV</a>
           </div>
-          <div class="column is-narrow ">
+          <div class="column is-narrow  pt-0">
             <a href="publications.pdf" class="has-text-black">publications</a>
           </div>
         </div>
 
       </div>
-
-      <div class="column">
-        <div class="block has-text-centered is-hidden-tablet">
-          <span class="icon">
-            <i class="mu mu-opts-h is-size-4"></i>
-          </span>
-        </div>
-        <div class="content has-text-justified">
-          {{ presentation.content | safe }} 
-        </div>
-      </div>
-    </div>
-
-    <div class="tile is-ancestor" >
-      <div class="tile is-parent">
-        <div class="tile is-child box">
-          <h3 class="subtitle has-text-centered">Data science</h3>
-          <div class="content">
-            <ul>
-              <li>
-                <strong>Structurer</strong> vos données pour les rendre utilisables,
-              </li>
-              <li>
-                En tirer des connaissances pour la <strong>prédiction</strong> et l'aide à la <strong>décision</strong>,
-              </li>
-              <li>
-                Créer des <strong>visualisations</strong>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <div class="tile is-child box">
-          <h3 class="subtitle has-text-centered">Machine learning</h3>
-          <div class="content">
-            <ul>
-              <li>
-                Exploiter de <strong>grands volumes</strong> de données,
-              </li>
-              <li>
-                <strong>Automatiser</strong> des tâches complexes,
-              </li>
-              <li>
-                Concevoir des <strong>algorithmes originaux</strong> répondant à vos besoins spécifiques.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="tile is-parent">
-        <div class="tile is-child box">
-          <h3 class="subtitle has-text-centered">Modélisation & Simulation</h3>
-          <div class="content">
-          <ul>
-            <li>
-              Développer des <strong>modèles</strong> informatiques de systèmes complexes,
-            </li>
-            <li>
-              Réaliser des études en <strong>simulation</strong>,
-            </li>
-            <li>
-              Concevoir des algorithmes pour la simulation, la
-              <strong>calibration</strong> de modèles,
-              l'<strong>estimation</strong> d'informations incomplètes, la
-              <strong>prédiction</strong>.
-            </li>
-          </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  </div>
-
-  <div class="hero-foot has-background-grey-dark has-text-grey-lighter py-3">
-    <div class="columns is-centered is-vcentered is-mobile">
-      <div class="column has-text-right is-narrow">
-        <span class="icon">
-          <i class="mu mu-down is-size-4 is-size-4-mobile"></i>
-        </span>
-      </div>
-
-      <div class="column has-text-centered is-narrow">
-        <h2 class="title has-text-grey-lighter is-size-4-mobile">Quelques travaux …</h2>
-      </div>
-
-      <div class="column has-text-left is-narrow">
-      <span class="icon">
-        <i class="mu mu-down is-size-4 is-size-4-mobile"></i>
-      </span>
-      </div>
-  </div>
-
-</section>
-
-<section class="hero">
-  <div class="hero-body pt-0 has-background-grey-dark has-text-grey-lighter ">
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
-      <div class="content has-text-left has-text-link-light">
-        <ul>
-        {% for page in travaux.pages %}
-        <li><a href="#{{page.title | slugify}}" class="has-text-grey-lighter">{{page.title}}</a></li>
-        {% endfor %}
-        </ul>
-      </div>
-      </div>
     </div>
   </div>
 </section>
 
-{% for page in travaux.pages %}
-{% if loop.index % 2 == 0 %}
-{% set bgColor = "lighter" %}
-{% else %}
-{% set bgColor = "light" %}
-{% endif %}
-<section class="hero is-{{bgColor}}">
-  <div class="hero-body">
+<section class="section has-background-light">
     <div class="container is-max-desktop">
-      <div class="content has-text-justified">
-        <h2 class="title">
-          <span class="icon">
-            <i class="mu mu-i-right"></i>
-          </span>
-          <a id="{{page.title | slugify}}"></a>
-          {{ page.title | safe }}
-        </h2>
+      <div class="columns mb-6 is-multiline is-centered">
+        <div class="column has-text-justified is-two-thirds">
 
-        <div class="columns">
-          <div class="column">
-            {{ page.content | safe }}
-          </div>
+          <h2 class="title has-text-centered">Pourquoi ?</h2>
 
-          <div class="column">
-            <div class="box">
-            <img src="{{ page.permalink | safe }}figure.png">
-            </div>
-          </div>
+          <p>Pour créer les logiciels qui répondent précisément à vos besoins,
+          fiables et sur lesquels vous pourrez compter longtemps.</p>
+
         </div>
+
+        <div class="column has-text-justified is-half">
+          <h2 class="title has-text-centered">Comment ?</h2>
+
+          <p><strong>En vous écoutant.</strong> Je veux commencer par comprendre
+          votre métier en détail et vous aider à formuler vos besoins
+          précisément.</p>
+
+          <p><strong>En modélisant.</strong> Traduire vos besoins en concepts
+          clairs et précis, c'est poser les bases pour concevoir des logiciels
+          que vous ou vos clients pourrez prendre en main intuitivement et en
+          confiance.</p>
+
+          <p><strong>En écrivant du code de qualité.</strong> Un logiciel bien
+          conceptualisé et écrit avec rigueur est plus fiable et plus facile à
+          maintenir et à faire évoluer.</p>
+
+          <p><strong>En utilisant des technologies établies</strong> pour
+          construire en confiance et pour longtemps.</p>
+
+          <p><strong>En communiquant.</strong> Documenter, former, échanger pour
+          que vos équipes et vous puissiez vous réapproprier mon travail et être
+          libres.</p>
+
+        </div>
+
+        <div class="column has-text-justified is-half">
+          <h2 class="title has-text-centered">Quoi ?</h2>
+
+          <p>Développer des logiciels en <strong>Scala, Haskell, Python, C, C++,
+            Java ou Rust</strong>,</p>
+
+          <p>Récolter, traiter et analyser vos données avec <strong>Pandas,
+            Numpy, Matplotlib, R, SQL, Elasticsearch</strong>,</p>
+
+          <p>Automatiser et déployer des applications sur vos machines ou sur le
+          cloud avec <strong>AWS, docker, Bash</strong>,</p>
+
+          <p>Utiliser les outils de développement modernes pour collaborer et
+          livrer efficacement: <strong>Git, CI/CD, docker, micro-services
+          cloud</strong>,</p>
+
+          <p>Écrire des <strong>cahiers des charges</strong> pour donner forme à
+          vos besoins et des <strong>documentations techniques et
+          fonctionnelles</strong> pour communiquer avec vous et vos équipes.</p>
+
+          <p>Contactez-moi par <a href="mailto:guillaume.cherel@cosimus.com">mail</a> ou via 
+          <a href="https://www.malt.fr/profile/guillaumecherel">Malt</a>,
+          <a href="https://www.linkedin.com/in/guillaumecherel/">LinkedIn</a> ou
+          <a href="https://github.com/guillaumecherel">GitHub</a>.</p>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns mb-6 is-multiline is-centered">
+        <div class="column has-text-justified is-two-thirds">
+
+          <h2 id="a-propos-de-moi" class="title has-text-centered"> 
+            À propos de moi…
+          </h2>
+
+          <p>Docteur depuis 2013 en modélisation et simulation de systèmes
+          complexes et ingénieur au CNRS et à l'Inria, j'ai participé au
+          développement de logiciels et accompagné des chercheurs dans leur
+          démarche scientifique par la simulation et le traitement de données.
+          J'ai découvert des métiers et des sujets passionnants pour concevoir
+          les solutions logicielles qui répondent précisément à des besoins
+          pointus. Cette position d'interlocuteur à l'écoute de vos besoins et
+          d'expert technique m'épanouit et je la propose maintenant comme
+          service indépendant en l'élargissant aux entreprises, associations et
+          autres organismes publics œuvrant dans des domaines variés.</p>
+
       </div>
     </div>
   </div>
 </section>
-{% endfor %}
 
-<footer class="footer">
-  <div class="columns is-centered">
-  <div class="column ">
-    <p><strong>Cosimus</strong> par Guillaume Chérel.</p>
-    <p>(mentions légales à venir)</p>
-    <p>guillaume.cherel@cosimus.com</p>
-    <p>07 49 60 59 50</p>
+<div class="columns is-centered is-vcentered is-mobile pb-6">
+  <div class="column has-text-centered">
+
+    <span class="icon">
+      <i class="mu mu-down is-size-2 is-size-4-mobile"></i>
+    </span>
+
   </div>
-  <div class="column">
-      <a href="https://www.s-ings.com/projects/microns-icon-font/">Microns</a> icon set by Stephen Hutchings  is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>
-  </div>
-  </div>
-</footer>
+</div>
+
+
+{% include "trousse_a_outils.html" %}
+{% include "missions.html" %}
+
 {% endblock content %} 
