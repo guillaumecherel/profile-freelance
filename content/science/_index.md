@@ -3,7 +3,7 @@ template="presentation-science.html"
 +++
 
 Docteur en modélisation de systèmes complexes depuis 2013, je vous aide à
-développer et automatiser vos modèle, simulations, calculs scientifiques et
+développer et automatiser vos modèles, simulations, calculs scientifiques et
 traitements de données jusqu'à la production de vos résultats.
 
 **Gagnez du temps** en automatisant. En facilitant l'itération révision -
