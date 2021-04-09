@@ -1,14 +1,18 @@
 +++
-title = "Un algorithme hautement parallélisable d'inférence bayésienne en simulation."
-+++
+template = "mission.html"
+title = "Parallélisation d'un algorithme d'inférence bayésienne en simulation."
 
-*2017-2020, CNRS, Institut des Systèmes Complexes — Paris Île-de-France.*
+[extra]
+# Special extra date format for year only date span
+date = "2017-2020"
+client = "CNRS, Institut des Systèmes Complexes — Paris Île-de-France"
++++
 
 Les méthodes d'inférence bayésienne par simulation (Approximate Bayesian
 Computation) requièrent un très grand nombre d'exécutions de modèles. Celles-ci
 étant indépendantes, on peut les exécuter en parallèle pour tirer profit des
 ressources de calcul distribuées. Cet algorithme permet d'exploiter
-efficacement des milliers de cpu en parallèle.
+efficacement des milliers de cœurs en parallèle.
 
 La figure ci-contre montre que le temps d'exécution de l'algorithme (vert)
 décroit plus vite que celui de son concurrent (violet) lorsque le nombre de cpu

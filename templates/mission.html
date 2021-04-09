@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <h2 class="title">
+          <span class="icon">
+            <i class="mu mu-i-right"></i>
+          </span>
+          <a id="{{page.title | slugify}}"></a>
+          {{ page.title | safe }}
+        </h2>
+
+        <p>
+        <em>Pour: {{page.extra.client}}
+          <br/>
+          {{page.extra.date}}
+        </em>
+        </p>
+
+        <div class="columns">
+          <div class="column">
+            {{ page.content | safe }}
+          </div>
+
+          <div class="column">
+            <div class="box">
+            <img src="{{ page.permalink | safe }}figure.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "missions.html" %}
+
+{% endblock content %} 

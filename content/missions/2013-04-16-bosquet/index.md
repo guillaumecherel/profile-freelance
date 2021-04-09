@@ -1,8 +1,12 @@
 +++
+template = "mission.html"
 title = "Un modèle spatial de la dynamique de population d'arbres en savane"
-+++
 
-*2010-2013, Université Paris 6, Laboratoire Bioemco.*
+[extra]
+# Special extra date format for year only date span
+date = "2010-2013"
+client = "Université Paris 6, Laboratoire Bioemco"
++++
 
 En savane, les bosquets réduisent localement l'intensité du feu en projetant de
 l'ombre au sol qui diminue le combustible — l'herbe — qui pousse. Ces

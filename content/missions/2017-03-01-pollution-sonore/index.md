@@ -1,8 +1,12 @@
 +++
+template = "mission.html"
 title = "Estimation de la pollution sonore"
-+++
 
-*2016-2017, Inria, équipe Clime.*
+[extra]
+# Special extra date format for year only date span
+date = "2016-2017"
+client = "Inria"
++++
 
 Le bruit a des [conséquences problématiques sur le sommeil, le cœur, les
 performances scolaires][who-noise]… Les smart-phones sont équipés de microphones qui
