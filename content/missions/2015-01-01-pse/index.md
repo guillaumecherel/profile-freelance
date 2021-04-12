@@ -8,6 +8,19 @@ date = "2013-2015"
 client = "CNRS, Institut des Systèmes Complexes — Paris Île-de-France"
 +++
 
+**Besoin :** Explorer la diversité des sorties possibles d'un modèle en
+simulation.
+
+**Solution apportée :** Un algorithme pour explorer l'espace de sortie
+multidimensionnel d'un modèle, appliqué à un modèle géographique de système de
+ville.
+
+**Méthode :** Développement en Scala d'un algorithme génétique 
+
+**Code :** Algorithme intégré à la bibliothèque
+[MGO](https://github.com/openmole/mgo) pour l'optimisation par algorithme
+génétique.
+
 Pour tester la validité d'un modèle qui vise à expliquer un phénomène, nous
 avons proposé de rechercher ses comportements inattendus : ceux-ci peuvent
 constituer des contre-exemples, révéler des bugs ou des erreurs dans les

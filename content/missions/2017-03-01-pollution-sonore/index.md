@@ -8,6 +8,16 @@ date = "2016-2017"
 client = "Inria"
 +++
 
+**Besoin :** Estimer l'exposition au bruit d'un individu grâce à son téléphone
+mobile.
+
+**Solution apportée :** Une méthode statistique pour estimer l'expostion au 
+bruit heure par heure d'un utilisateur de téléphone mobile.
+
+**Méthode :** Application d'une méthode d'assimilation de données (Best Linear
+Unbiased Estimator) à des données d'intensité sonore récoltées par des
+téléphones mobiles et implémentation en Python.
+
 Le bruit a des [conséquences problématiques sur le sommeil, le cœur, les
 performances scolaires][who-noise]… Les smart-phones sont équipés de microphones qui
 permettent de mesurer le niveau de bruit dans l'environnement de leurs

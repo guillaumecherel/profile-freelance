@@ -1,12 +1,26 @@
 +++
 template = "mission.html"
-title = "Parallélisation d'un algorithme d'inférence bayésienne en simulation."
+title = "Parallélisation d'un algorithme d'inférence bayésienne en simulation"
 
 [extra]
 # Special extra date format for year only date span
 date = "2017-2020"
 client = "CNRS, Institut des Systèmes Complexes — Paris Île-de-France"
 +++
+
+**Besoin :** Calibrer un modèle multi-agents de système complexe.
+
+**Solution apportée :** Une algorithme de calibration permettant d'exploiter
+en parallèle plusieurs milliers de processeurs.
+
+**Méthode :** Partant d'un algorithme de calcul bayésien approché
+(approximate Bayesian computation) de l'état de l'art, conception et
+implémentation d'une version parallèle multi-niveaux.
+
+**Code :** Une [implémentation en
+haskell](https://github.com/guillaumecherel/monapmc) avec tests de la méthode.
+Une [implémentation en Scala](https://github.com/openmole/mgo) pour la
+plateforme de simulation OpenMOLE.
 
 Les méthodes d'inférence bayésienne par simulation (Approximate Bayesian
 Computation) requièrent un très grand nombre d'exécutions de modèles. Celles-ci
