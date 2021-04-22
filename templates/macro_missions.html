@@ -1,0 +1,22 @@
+{% macro mission_list(per_column=0) %}
+<div class="columns is-multiline">
+  <div class="column is-half">
+  {% set travaux = get_section(path="missions/_index.md") %}
+  {% for page in travaux.pages %}
+        <p>
+          <a class="link" href="{{page.permalink}}" class="has-text-link">{{page.title}}</a>
+          <br/>
+          Pour : {{page.extra.client}}
+          <br/>
+          {{page.extra.date}}
+        </p>
+
+  {% if loop.index % per_column == 0 %}
+  </div>
+  <div class="column is-half">
+  {% endif %}
+
+  {% endfor %}
+  </div>
+</div>
+{% endmacro mission_list %}

@@ -1,0 +1,99 @@
+@charset "utf-8"
+
+@import url('/fonts/Now-Regular/font.css');
+
+@import "nord-palette.scss"
+
+// Colors
+//$black: $nord0
+//$black-bis: $nord1
+//$black-ter: $nord2
+$grey-darker: $nord0
+$grey-dark: $nord1
+$grey: $nord2
+$grey-light: $nord3
+$grey-lighter: $nord4
+//$grey-lightest: $nord4
+$white-ter: $nord5
+$white-bis: $nord6
+$white: hsl(0, 0%, 100%)
+
+$turquoise: $nord7 //hsl(171, 100%, 41%)
+$cyan: $nord8 //hsl(207, 61%, 53%)
+$blue: $nord10 //hsl(229, 53%, 53%)
+
+$red: $nord11 //hsl(348, 86%, 61%)
+$orange: $nord12 //hsl(14, 100%, 53%)
+$yellow: $nord13 //hsl(44, 100%, 77%)
+$green: $nord14 //hsl(153, 53%, 53%)
+$purple: $nord15 //hsl(271, 100%, 71%)
+
+// // Update Bulma's global variables
+$family-sans-serif: "Now-Regular", sans-serif
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+// $primary: $purple;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+// 
+// // Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+$column-gap: 1.5rem
+
+$title-color: inherit
+$subtitle-color: inherit
+$strong-color: inherit
+
+@import "../bulma-0.9.2/bulma.sass"
+
+body
+  background: $nord9
+    
+.module
+  @extend .is-size-5 
+  @extend .has-text-justified
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+strong
+  @extend .is-italic
+  @extend .has-text-weight-bold
+  
+.has-background-low-1
+  //@extend .has-background-info-light
+  background: $white
+  color: $nord0
+
+.has-background-low-2
+  background: $nord5
+  color: $nord0
+  //@extend .has-background-success-light
+
+.has-background-low-3
+  background: $nord4
+  color: $nord0
+  @extend .has-background-link-light
+
+.has-background-high-1
+  background: $nord13
+  color: $nord0
+  // @extend .has-background-info-dark
+  // @extend .has-text-white-ter
+
+.has-background-high-2
+  background: $nord12
+  color: $nord0
+  // @extend .has-background-black-ter
+  // @extend .has-text-white-ter
+
+.has-background-high-3
+  background: $nord11
+  color: $nord0
+  // @extend .has-background-grey-darker
+  // @extend .has-text-white-ter
+

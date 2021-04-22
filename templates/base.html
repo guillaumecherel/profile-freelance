@@ -5,27 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cosimus</title>
-  <link rel="stylesheet" href="/css/mystyles.css">
+  <link rel="stylesheet" href="/nord.css">
   <link rel='stylesheet' href='/icons/microns.css' />
-  <link rel="stylesheet" media="screen" href="/fonts/Now-Regular/font.css" type="text/css"/>
+  <!--<link rel="stylesheet" media="screen" href="/fonts/Now-Regular/font.css" type="text/css"/>-->
 </head>
 
 <body>
 
+  <div class="container is-max-desktop">
+    {% include "navbar.html" %}
+  </div>
+
   {% block content %} {% endblock %}
 
-  <footer class="footer has-background-grey-lighter ">
-    <div class="columns is-centered">
-    <div class="column">
-      <p><strong>Cosimus</strong> par Guillaume Chérel.</p>
-      <p>guillaume.cherel@cosimus.com</p>
-      <p>07 49 60 59 50</p>
-    </div>
-    <div class="column">
-        <a href="https://www.s-ings.com/projects/microns-icon-font/">Microns</a> icon set by Stephen Hutchings  is licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA</a>
-    </div>
-    </div>
-  </footer>
+  <div class="container is-max-desktop">
+    {% include "navbar.html" %}
+  </div>
+
 </body>
 
 </html>

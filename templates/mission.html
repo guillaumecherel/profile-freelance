@@ -1,44 +1,62 @@
+{% import "macro_missions.html" as macro_missions  %}
+
 {% extends "base.html" %}
 
 {% block content %}
 
-{% include "navbar.html" %}
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline">
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="content has-text-justified">
-        <h2 class="title">
-          <span class="icon">
-            <i class="mu mu-i-right"></i>
-          </span>
-          <a id="{{page.title | slugify}}"></a>
-          {{ page.title | safe }}
-        </h2>
+      <div class="column is-full">
+        <div class="module has-background-low-1">
 
-        <p>
-        <em>Pour : {{page.extra.client}}
-          <br/>
-          {{page.extra.date}}
-        </em>
-        </p>
+          <h2 class="title">
+            <a id="{{page.title | slugify}}"></a>
+            {{ page.title | safe }}
+          </h2>
 
-        <div class="columns">
-          <div class="column">
-            {{ page.content | safe }}
-          </div>
+          <div class="columns">
 
-          <div class="column">
-            <div class="box">
-            <img src="{{ page.permalink | safe }}figure.png">
+            <div class="column is-half">
+
+              <div class="block is-italic">
+                Pour : {{page.extra.client}}
+                  <br/>
+                  {{page.extra.date}}
+              </div>
+
+              {{ page.content | safe }}
+
             </div>
+
+            <div class="column is-half">
+              <div class="box">
+                <img src="{{ page.permalink | safe }}figure.png">
+              </div>
+            </div>
+
           </div>
+
+        </div>
+      <!-- end of column -->
+      </div>
+
+      <div class="column is-full">
+        <div class="module has-background-low-3">
+          <h2 class="title"><a id="missions"></a>
+             D'autres missions
+          </h2>
+          {{ macro_missions::mission_list(per_column=3) }}
         </div>
       </div>
+
+    <!-- end of columns -->
     </div>
   </div>
 </section>
 
-{% include "missions.html" %}
+
+
 
 {% endblock content %} 

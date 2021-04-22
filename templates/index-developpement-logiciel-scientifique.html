@@ -1,181 +1,107 @@
+{% import "macro_missions.html" as macro_missions  %}
+
 {% extends "base.html" %}
 
 {% block content %}
 
+
+
+
 <!-- section acceuil -->
-<section class="hero is-fullheight">
-  <div class="hero-head">
-    {% include "navbar.html" %}
-  </div>
+<section class="section">
 
-  <div class="hero-body">
+  <!-- container max desktop -->
+  <div class="container is-max-desktop">
+    <!-- columns -->
+    <div class="columns is-multiline">
 
-    <!-- container max desktop -->
-    <div class="container is-max-desktop">
-      <!-- columns -->
-      <div class="columns is-centered is-vcentered">
-        <!-- column 1 -->
-        <div class="column has-text-centered is-half">
-
-          <div class="box py-6 my-6 mx-5 px-5">
-            <h1 class="title-3 is-size-1">Cosimus</h1>
-            <h2 class="subtitle is-size-4">Développement logiciel scientifique</h2>
-
-            <div class="block is-size-4 mb-1">
-              <p>Guillaume Chérel, Ph.D.</p>
-            </div>
-
-            <div class="columns is-centered is-vcentered is-mobile mb-0">
-              <div class="column is-narrow ">
-                <a href="mailto:guillaume.cherel@cosimus.com" class="has-text-dark">
-                  <span class="icon my-0 py-0" >
-                    <i class="mu mu-mail is-size-3 my-0 py-0"></i>
-                  </span>
-                </a>
-              </div>
-              <div class="column is-narrow">
-                <a href="https://www.malt.fr/profile/guillaumecherel">
-                  <img width="22" height="22" src="logos/Malt-Mark.svg">
-                </a>
-              </div>
-              <div class="column is-narrow">
-                <a href="https://www.linkedin.com/in/guillaumecherel/">
-                  <img width="28" height="28" src="logos/LinkedIn-Mark.svg">
-                </a>
-              </div>
-              <div class="column is-narrow">
-                <a href="https://github.com/guillaumecherel">
-                  <img width="24" height="24" src="logos/GitHub-Mark.svg">
-                </a>
-              </div>
-            </div>
-
-            <div class="columns is-centered is-vcentered is-mobile is-size-4 pt-0">
-              <div class="column is-narrow  pt-0">
-                <a href="2020-09-10_ingenieur_modelisation_indep_fr_web.pdf" class="has-text-black">CV</a>
-              </div>
-              <div class="column is-narrow  pt-0">
-                <a href="publications.pdf" class="has-text-black">publications</a>
-              </div>
-            </div>
-            
-          <!-- box -->
-          </div>
-
-        <!-- column 1 -->
+      <div class="column is-half">
+        <div class="module has-background-low-1">
+          {% include "business-card.html" %}
         </div>
-
-        <!-- column 2 -->
-        <div class="column has-text-centered is-half is-transparent">
-
-            <div class="content has-text-centered is-hidden-tablet">
-              <span class="icon">
-                <i class="mu mu-opts-h is-size-4"></i>
-              </span>
-            </div>
-            <div class="content has-text-justified is-size-5">
-              <p>
-                Je vous aide à développer les logiciels et bibliothèques pour
-                répondre à vos besoins scientifiques et d'ingénierie en Scala,
-                Haskell ou Rust et à analyser vos données en Python ou R.
-              </p>
-              
-              Contactez-moi pour :
-              <ul>
-              <li>
-                <strong>Modéliser</strong> vos questions scientifiques sous forme informatique.
-              </li>
-              <li>
-                Développer des logiciels en <strong>Scala, Haskell ou Rust</strong>.
-              </li>
-              <li>
-                Écrire des scripts d'analyse de données en <strong>Python ou R</strong>.
-              </li>
-              </ul>
-
-              <p>Je suis joignable par 
-              <a href="mailto:guillaume.cherel@cosimus.com">e-mail</a> 
-              ou via 
-              <a href="https://www.malt.fr/profile/guillaumecherel">Malt</a>,
-              <a href="https://www.linkedin.com/in/guillaumecherel/">LinkedIn</a> 
-              ou
-              <a href="https://github.com/guillaumecherel">GitHub</a>.</p>
-
-            </div>
-
-
-        <!-- column 2 -->
-        </div>
-
-      <!-- columns -->
       </div>
-    <!-- container max desktop -->
-    </div>
-  <!-- hero body-->
-  </div>
 
-  <div class="hero-foot ">
-    <div class="columns is-centered is-vcentered is-mobile pb-6">
-      <div class="column has-text-centered">
-        <span class="icon">
-          <i class="mu mu-down is-size-2 is-size-4-mobile"></i>
-        </span>
-      </div>
-    </div>
-  </div>
-<!-- section acceuil -->
-</section>
+      <div class="column is-half">
+        <div class="content module has-background-low-1">
 
-<section class="section has-background-light">
-    <div class="container is-max-desktop">
-      <div class="columns mb-6 is-multiline is-centered">
+          <p>
+            Je vous aide à développer les logiciels et bibliothèques pour
+            répondre à vos besoins scientifiques et d'ingénierie en Scala,
+            Haskell ou Rust et à analyser vos données en Python ou R.
+          </p>
+          
+          Contactez-moi pour :
+          <ul>
+          <li>
+            <strong>Modéliser</strong> vos questions scientifiques sous forme informatique.
+          </li>
+          <li>
+            Développer des logiciels en <strong>Scala, Haskell ou Rust</strong>.
+          </li>
+          <li>
+            Écrire des scripts d'analyse de données en <strong>Python ou R</strong>.
+          </li>
+          </ul>
 
-        <!-- For proper centering of the next column in the middle of
-        the first row -->
-        <div class="column">
+          <p>Je suis joignable par 
+          <a class="link" href="mailto:guillaume.cherel@cosimus.com">e-mail</a> 
+          ou via 
+          <a class="link" href="https://www.malt.fr/profile/guillaumecherel">Malt</a>,
+          <a class="link" href="https://www.linkedin.com/in/guillaumecherel/">LinkedIn</a> 
+          ou
+          <a class="link" href="https://github.com/guillaumecherel">GitHub</a>.</p>
+
         </div>
+      </div>
 
-        <div class="column has-text-justified is-half">
-          <h2 class="title has-text-centered">Pourquoi ?</h2>
+      <div class="column is-half">
+        <div class="module has-background-high-1">
+        
+          <h2 class="title">Pourquoi ?</h2>
           
           <p>
             J'aspire à créer les bases informatiques rigoureuses et ouvertes
             pour les besoins de la science et de l'ingénierie.
           </p>
-        </div>
-
-        <!-- For proper centering of the previous column in the middle of
-        the first row -->
-        <div class="column">
-        </div>
-
-        <div class="column has-text-justified is-half">
-          <h2 class="title has-text-centered">Comment ?</h2>
-
-          <p><strong>En vous écoutant,</strong> pour comprendre votre métier en
-          détail et vous aider à formuler vos besoins précisément.</p>
-
-          <p><strong>En modélisant rigoureusement.</strong> Traduire vos besoins
-          en concepts clairs et précis, c'est poser les bases pour concevoir des
-          logiciels que vous pourrez prendre en main intuitivement et en
-          confiance.</p>
-
-          <p><strong>En écrivant du code de qualité.</strong> Un logiciel bien
-          conceptualisé et écrit avec rigueur est plus fiable et plus facile à
-          maintenir et à faire évoluer.</p>
-
-          <p><strong>En utilisant des technologies fiables,</strong> conçues 
-          pour construire en confiance et pour longtemps.</p>
-
-          <p><strong>En communiquant.</strong> Documenter, former, échanger pour
-          que vos équipes et vous puissiez vous réapproprier mon travail et être
-          libres.</p>
 
         </div>
+      </div>
 
-        <div class="column has-text-justified is-half">
+      <!-- Empty column to force new row -->
+      <div class="column">
+      </div>
 
-          <h2 class="title has-text-centered">Quoi ?</h2>
+      <div class="column is-half">
+        <div class="module has-background-high-1">
+
+        <h2 class="title">Comment ?</h2>
+
+        <p><strong>En vous écoutant,</strong> pour comprendre votre métier en
+        détail et vous aider à formuler vos besoins précisément.</p>
+
+        <p><strong>En modélisant rigoureusement.</strong> Traduire vos besoins
+        en concepts clairs et précis, c'est poser les bases pour concevoir des
+        logiciels que vous pourrez prendre en main intuitivement et en
+        confiance.</p>
+
+        <p><strong>En écrivant du code de qualité.</strong> Un logiciel bien
+        conceptualisé et écrit avec rigueur est plus fiable et plus facile à
+        maintenir et à faire évoluer.</p>
+
+        <p><strong>En utilisant des technologies fiables,</strong> conçues 
+        pour construire en confiance et pour longtemps.</p>
+
+        <p><strong>En communiquant.</strong> Documenter, former, échanger pour
+        que vos équipes et vous puissiez vous réapproprier mon travail et être
+        libres.</p>
+
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="module has-background-high-1">
+
+          <h2 class="title">Quoi ?</h2>
 
           <p>
             Je développe des logiciels et bibliothèques de calcul scientifique
@@ -197,38 +123,61 @@
           </p>
 
         </div>
+      </div>
 
-    </div>
-  </div>
-</section>
+      <div class="column has-text-justified is-full">
+        <div class="module has-background-low-2">
 
-<section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns mb-6 is-multiline is-centered">
-        <div class="column has-text-justified is-two-thirds">
-
-          <h2 id="a-propos-de-moi" class="title has-text-centered"> 
+          <h2 id="a-propos-de-moi" class="title"> 
             À propos de moi…
           </h2>
 
-          <p>Docteur depuis 2013 en modélisation et simulation de systèmes
-          complexes et ingénieur de recherche au CNRS et à l'Inria, j'ai
-          participé au développement de logiciels et accompagné des chercheurs
-          dans leur démarche scientifique par la simulation et le traitement de
-          données. J'ai découvert des métiers et des sujets passionnants pour
-          concevoir les solutions logicielles qui répondent précisément à des
-          besoins de pointe. Cette position d'interlocuteur à l'écoute de vos
-          besoins et d'expert technique m'épanouit et je la propose maintenant
-          comme service indépendant en l'élargissant aux entreprises,
-          associations et autres organismes publics œuvrant dans des domaines
-          variés.</p>
+          <p>
+            Docteur depuis 2013 en modélisation et simulation de systèmes
+            complexes et ingénieur de recherche au CNRS et à l'Inria, j'ai
+            participé au développement de logiciels et accompagné des chercheurs
+            dans leur démarche scientifique par la simulation et le traitement de
+            données. J'ai découvert des métiers et des sujets passionnants pour
+            concevoir les solutions logicielles qui répondent précisément à des
+            besoins de pointe. Cette position d'interlocuteur à l'écoute de vos
+            besoins et d'expert technique m'épanouit et je la propose maintenant
+            comme service indépendant en l'élargissant aux entreprises,
+            associations et autres organismes publics œuvrant dans des domaines
+            variés.
+          </p>
 
+        </div>
       </div>
+
+      <div class="column is-full">
+        <div class="module has-background-high-2">
+          
+          <h2 id="competences" class="title">
+            Ma trousse à outils (tech et le reste)
+          </h2>
+
+          {% include "trousse_a_outils.html" %}
+
+        </div>
+      </div>
+
+      <div class="column is-full">
+        <div class="module has-background-low-3">
+          <h2  class="title"><a id="missions"></a>
+            Missions passées 
+          </h2>
+          {{ macro_missions::mission_list(per_column=3) }}
+        </div>
+      </div>
+
+    <!-- end of columns -->
     </div>
+  <!-- end of container -->
   </div>
+<!-- end of section -->
 </section>
 
-{% include "trousse_a_outils.html" %}
-{% include "missions.html" %}
+
+
 
 {% endblock content %} 
