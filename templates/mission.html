@@ -4,52 +4,53 @@
 
 {% block content %}
 
-<section class="section">
+<section class="section has-background-low-1 pt-0 pb-0">
   <div class="container is-max-desktop">
-    <div class="columns is-multiline">
+    {% include "navbar.html" %}
+  </div>
+</section>
 
-      <div class="column is-full">
-        <div class="module has-background-low-1">
+<section class="section has-background-low-1">
+  <div class="container is-max-desktop">
 
-          <h2 class="title">
-            <a id="{{page.title | slugify}}"></a>
-            {{ page.title | safe }}
-          </h2>
+    <h2 class="title">
+      <a id="{{page.title | slugify}}"></a>
+      {{ page.title | safe }}
+    </h2>
 
-          <div class="columns">
+    <div class="columns">
 
-            <div class="column is-half">
+      <div class="column is-half">
 
-              <div class="block is-italic">
-                Pour : {{page.extra.client}}
-                  <br/>
-                  {{page.extra.date}}
-              </div>
-
-              {{ page.content | safe }}
-
-            </div>
-
-            <div class="column is-half">
-              <div class="box">
-                <img src="{{ page.permalink | safe }}figure.png">
-              </div>
-            </div>
-
-          </div>
-
+        <div class="block is-italic">
+          Pour : {{page.extra.client}}
+            <br/>
+            {{page.extra.date}}
         </div>
-      <!-- end of column -->
+
+        {{ page.content | safe }}
+
       </div>
 
-      <div class="column is-full">
-        <div class="module has-background-low-3">
-          <h2 class="title"><a id="missions"></a>
-             D'autres missions
-          </h2>
-          {{ macro_missions::mission_list(per_column=3) }}
+      <div class="column is-half">
+        <div class="box">
+          <img src="{{ page.permalink | safe }}figure.png">
         </div>
       </div>
+
+    </div>
+  <!-- end of container -->
+  </div>
+</section>
+
+<section class="section has-background-low-2">
+  <div class="container is-max-desktop">
+
+    <h2 class="title"><a id="missions"></a>
+       D'autres missions
+    </h2>
+
+    {{ macro_missions::mission_list(per_column=3) }}
 
     <!-- end of columns -->
     </div>

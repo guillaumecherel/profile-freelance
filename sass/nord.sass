@@ -45,55 +45,58 @@ $family-sans-serif: "Now-Regular", sans-serif
 
 $column-gap: 1.5rem
 
-$title-color: inherit
-$subtitle-color: inherit
-$strong-color: inherit
+
+$title-color: $nord10
+$subtitle-color: $nord9
+$text-strong: $nord12
+$link: $nord9
 
 @import "../bulma-0.9.2/bulma.sass"
+
+.business-card
+  .title, .subtitle
+    color: $nord0
 
 body
   background: $nord9
     
-.module
+a.unstyled
+  color: inherit
+
+.hero, .section
   @extend .is-size-5 
   @extend .has-text-justified
-  border-radius: 0.5rem;
-  padding: 1rem;
-
-strong
-  @extend .is-italic
-  @extend .has-text-weight-bold
+  @extend .is-medium
   
 .has-background-low-1
   //@extend .has-background-info-light
   background: $white
   color: $nord0
-
 .has-background-low-2
-  background: $nord5
+  background: $nord6
   color: $nord0
   //@extend .has-background-success-light
 
 .has-background-low-3
-  background: $nord4
+  background: $nord5
   color: $nord0
   @extend .has-background-link-light
 
 .has-background-high-1
-  background: $nord13
-  color: $nord0
+  background: $nord0
+  color: $nord6
   // @extend .has-background-info-dark
   // @extend .has-text-white-ter
 
 .has-background-high-2
-  background: $nord12
-  color: $nord0
+  background: $nord1
+  color: $nord6
   // @extend .has-background-black-ter
   // @extend .has-text-white-ter
 
 .has-background-high-3
-  background: $nord11
-  color: $nord0
+  background: $nord2
+  color: $nord6
   // @extend .has-background-grey-darker
   // @extend .has-text-white-ter
 

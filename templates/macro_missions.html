@@ -3,7 +3,7 @@
   <div class="column is-half">
   {% set travaux = get_section(path="missions/_index.md") %}
   {% for page in travaux.pages %}
-        <p>
+        <p class="block">
           <a class="link" href="{{page.permalink}}" class="has-text-link">{{page.title}}</a>
           <br/>
           Pour : {{page.extra.client}}
