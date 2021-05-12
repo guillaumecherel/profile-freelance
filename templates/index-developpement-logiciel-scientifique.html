@@ -17,43 +17,64 @@
 
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <div class="columns">
+      <div class="columns is-multiline">
 
         <div class="column is-half">
           {% include "business-card.html" %}
         </div>
 
         <div class="column is-half">
-          <div class="content">
+          <p class="block">
+            Je vous aide à développer les bases informatiques rigoureuses et
+            ouvertes pour vos besoins scientifiques, d'ingénierie et
+            d'analyse de données.
+          </p>
+          
+          <p class="block">
+          Docteur dans le domaine du calcul scientifique, j'accompagne en
+          freelance les scientifiques, chercheurs et ingénieurs dans le
+          développement informatique de leurs calculs scientifiques et leur
+          exploitation. 
+          </p>
+        </div>
 
-            <p>
-              Je vous aide à développer les logiciels et bibliothèques pour
-              répondre à vos besoins scientifiques et d'ingénierie en Scala,
-              Haskell ou Rust et à analyser vos données en Python ou R.
-            </p>
-            
-            Contactez-moi pour :
-            <ul>
-            <li>
-              <strong>Modéliser</strong> vos questions scientifiques sous forme informatique.
-            </li>
-            <li>
-              Développer des logiciels en <strong>Scala, Haskell ou Rust</strong>.
-            </li>
-            <li>
-              Écrire des scripts d'analyse de données en <strong>Python ou R</strong>.
-            </li>
-            </ul>
+        <div class="column is-full">
+          <p>
+             Je peux vous aider à :
+          </p>
+        </div>
 
-            <p>Je suis joignable par 
-            <a href="mailto:guillaume.cherel@cosimus.com">e-mail</a> 
-            ou via 
-            <a href="https://www.malt.fr/profile/guillaumecherel">Malt</a>,
-            <a href="https://www.linkedin.com/in/guillaumecherel/">LinkedIn</a> 
-            ou
-            <a href="https://github.com/guillaumecherel">GitHub</a>.</p>
+        <div class="column is-third">
+            <strong>Développer</strong> des algorithmes de calcul
+            scientifique, des modèles de simulation, des méthodes d'analyse
+            de données en Scala, Rust, Haskell, Python ou R.
+        </div>
 
-          </div>
+        <div class="column is-third">
+            <strong>Automatiser vos calculs et faciliter vos
+              collaborations</strong>, en mettant en place des environnements
+            de développement et de calcul avec Git, CICD et Docker.
+        </div>
+
+        <div class="column is-third">
+            <strong>Mettre en production</strong> des applications pour offrir
+            à des utilisateurs des services basés sur les résultats ou méthodes
+            de calculs développées, localement ou dans le cloud.
+        </div>
+
+        <div class="column is-full">
+          <p>Je suis joignable par 
+          <a href="mailto:guillaume.cherel@cosimus.com">e-mail</a> 
+          ou via 
+          <a href="https://www.malt.fr/profile/guillaumecherel">Malt</a>,
+          <a href="https://www.linkedin.com/in/guillaumecherel/">LinkedIn</a> 
+          ou
+          <a href="https://github.com/guillaumecherel">GitHub</a>.</p>
+
+          <p>
+            En savoir plus sur <a href="#mes-services">mes services</a>
+          </p>
+
         </div>
 
       <!-- end of columns -->
@@ -73,6 +94,65 @@
 
 
 
+<section class="section has-background-high-1">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column has-text-justified is-full">
+
+        <h2 id="a-propos-de-moi" class="title"> 
+          À propos de moi…
+        </h2>
+
+        <p>
+          Docteur depuis 2013 en modélisation et simulation de systèmes
+          complexes et ingénieur de recherche au CNRS et à l'Inria, j'ai
+          participé au développement de logiciels et accompagné des chercheurs
+          dans leur démarche scientifique par la simulation et le traitement de
+          données. J'ai découvert des métiers et des sujets passionnants pour
+          concevoir les solutions logicielles qui répondent précisément à des
+          besoins de pointe. Cette position d'interlocuteur à l'écoute de vos
+          besoins et d'expert technique m'épanouit et je la propose maintenant
+          comme service indépendant en l'élargissant aux entreprises,
+          associations et autres organismes publics œuvrant dans des domaines
+          variés.
+        </p>
+
+      </div>
+    <!-- end of columns -->
+    </div>
+  <!-- end of container -->
+  </div>
+</section>
+
+
+
+
+<section class="section has-background-low-2">
+  <div class="container is-max-desktop">
+    <div class="columns">
+
+      <div class="column is-full">
+
+        <h2 id="mes-services" class="title">Mes services</h2>
+
+        {% set page_mes_services = get_page(path="mes-services.md") %}
+
+        <div class="content">
+          {{ page_mes_services.content | safe }}
+        </div>
+          
+      </div>
+
+
+
+    <!-- end of columns -->
+    </div>
+  <!-- end of container -->
+  </div>
+</section>
+
+
+{#
 <section class="section has-background-high-1">
   <div class="container is-max-desktop">
     <div class="columns is-multiline">
@@ -147,39 +227,7 @@
   <!-- end of container -->
   </div>
 </section>
-
-
-
-
-<section class="section has-background-low-2">
-  <div class="container is-max-desktop">
-    <div class="columns">
-      <div class="column has-text-justified is-full">
-
-        <h2 id="a-propos-de-moi" class="title"> 
-          À propos de moi…
-        </h2>
-
-        <p>
-          Docteur depuis 2013 en modélisation et simulation de systèmes
-          complexes et ingénieur de recherche au CNRS et à l'Inria, j'ai
-          participé au développement de logiciels et accompagné des chercheurs
-          dans leur démarche scientifique par la simulation et le traitement de
-          données. J'ai découvert des métiers et des sujets passionnants pour
-          concevoir les solutions logicielles qui répondent précisément à des
-          besoins de pointe. Cette position d'interlocuteur à l'écoute de vos
-          besoins et d'expert technique m'épanouit et je la propose maintenant
-          comme service indépendant en l'élargissant aux entreprises,
-          associations et autres organismes publics œuvrant dans des domaines
-          variés.
-        </p>
-
-      </div>
-    <!-- end of columns -->
-    </div>
-  <!-- end of container -->
-  </div>
-</section>
+#}
 
 
 
