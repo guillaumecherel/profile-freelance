@@ -1,50 +1,40 @@
 +++
 +++
 
-### 1. Développer des calculs scientifiques
+### 1. Data science, modélisation et calcul scientifique
 
-Développer des méthodes de calcul en concertation avec des experts métiers pour
-répondre à une question scientifique ou un besoin d'ingénierie,
-d'automatisation, en favorisant un style de programmation fonctionnelle. 
+Développer des modèles statistiques ou d'IA, méthodes d'analyse de données, de
+calcul scientifique en concertation avec des experts métiers pour répondre à un
+besoin métier de prédiction ou d'automatisation, à une question scientifique ou
+à un besoin d'ingénierie.
 
-- Conception formelle de méthodes de calcul.
-- Développement d'algorithmes de calculs scientifiques en Rust, Scala,
-  Haskell, Python.
-- Développement de bibliothèque logicielle pour mettre les algorithmes à
-  disposition d'utilisateurs.
-- Développement de code pour générer des visualisations de résultats.
+- Analyse exploratoire de données avec Python, Pandas, numpy et matplotlib,
+- Conception et développement de méthodes de calcul pour répondre à des besoins
+  métiers ou des questions scientifiques en Python, Scala, Haskell ou Rust,
+- Conception de modèles d'IA en Python avec scikit-learn,
+- Conception et développement de modèles de simulation en Python, Scala, Haskell
+  ou Rust,
+- Développement de visualisations de données en Python avec Matplotlib ou
+  Javascript avec Vega-lite.
 
-### 2. Automatiser et faciliter la collaboration
 
-Mettre en place un environnement de développement et de calcul pour collaborer
-et exécuter des calculs: échanger du code, gérer les versions, lancer des calculs et
-récupérer des résultats.
+### 2. Développement logiciel
 
-- Mettre en place un dépôt Git sur un serveur GitLab ou GitHub.
-- Mettre en place un environnement de calcul pour exécuter les calculs et
-  traiter les résultats de manière reproductible avec Docker et Docker-compose
-  ou Nix, sur une machine locale, un cluster ou dans le cloud.
-- Stocker des données et des résultats dans une base de données SQL ou NoSQL.
-- Développer des visualisations statiques ou interactives de résultats avec les
-  technologies web : HTML, Javascript, Vega.
-- Déployer un environnement de script collaboratif Jupyter avec les
-  méthodes de calcul et les résultats de calculs accessibles pour une analyse
-  exploratoire.
-- Automatiser le lancement des calculs et la génération des résultats par 
-  l'intégration continue et le déploiement continu avec GitLab-CICD.
+Développer des interfaces aux modèles et méthodes de calculs pour en faire des
+services utilisables par des utilisateurs ou des outils pour des équipes
+techniques. Utiliser une approche fonctionnelle, typée et des tests pour
+améliorer la robustesse et la facilité d'entretien des applications dans la
+durée.
 
-### 3. Mettre en production
+- Développement d'une interface web en HTML, Javascript et React,
+- Développement d'une API REST en Python avec FastAPI,
+- Déploiement d'une application web avec une architecture client-serveur,
+- Stockage des données et des résultats dans une base de données SQL (PostgreSQL)
+  ou NoSQL (Elasticsearch).
+- Mise en place d'un environnement de calcul pour exécuter des calculs intensifs
+  avec Docker et Docker-compose, sur une machine locale, un cluster ou dans le
+  cloud,
+- Collaboration en équipe via un dépôt Git,
+- Entretien des applications que je développe dans la durée.
 
-Mettre des méthodes de calcul scientifique en production: développer une
-application qui intègre des méthodes de calcul développées ou se base sur les
-résultats produits pour offrir un service à des utilisateurs (grand public,
-scientifiques, ingénieurs, décideurs…).  
-
-- Développer le code back-end qui implémente la logique des services à offrir en
-  Haskell, Scala ou Rust.
-- Développer une interface utilisateur en HTML et Javascript.
-- Déployer l'application en local, sur un serveur ou dans le cloud avec Docker
-  ou Nix.
-- Automatiser le passage du développement à la mise en production avec
-  GitLab-CICD
 
